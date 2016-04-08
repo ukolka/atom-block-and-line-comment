@@ -1,7 +1,7 @@
 {
   "name": "block-and-line-comment",
   "main": "./lib/block-and-line-comment.js",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Comment your code with block and lines comments",
   "keywords": [
     "block lines comment"
