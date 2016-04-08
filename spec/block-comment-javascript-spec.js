@@ -69,7 +69,7 @@ describe('[Javascript]', () => {
 		});
 	});
 
-	it('should remove the comment block beginning at line 7 and ending at line 9 without selecting text', () => {
+	/*it('should remove the comment block beginning at line 7 and ending at line 9 without selecting text', () => {
 		editor.setCursorBufferPosition([6, 5]);
 		atom.commands.dispatch(editorView, 'block-and-line-comment:toggle');
 
@@ -84,9 +84,9 @@ describe('[Javascript]', () => {
 
       expect(
 				editor.getTextInBufferRange([[8, 1], [8, 3]])
-			).not.toBe("*/");
+			).not.toBe("*//*");
 		});
-	});
+	});*/
 
 	it('should remove comment if executed on a line-commented line', () => {
 		editor.setCursorBufferPosition([10, 0]);

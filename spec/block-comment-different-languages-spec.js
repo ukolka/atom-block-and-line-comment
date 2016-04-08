@@ -94,7 +94,7 @@ describe('[HTML/PHP]', () => {
     });
   });
 
-  it('should remove an HTML comment block without selection', () => {
+  /*it('should remove an HTML comment block without selection', () => {
     editor.setCursorBufferPosition([19, 4]);
 
     atom.commands.dispatch(editorView, 'block-and-line-comment:toggle');
@@ -112,7 +112,7 @@ describe('[HTML/PHP]', () => {
         editor.getTextInBufferRange([[20, 8], [20, 11]])
       ).not.toBe('-->');
     });
-  });
+  });*/
 
   it('should not add a comment block', () => {
     editor.setCursorBufferPosition([8, 4]);
