@@ -3,18 +3,18 @@
   'atom-text-editor': [
     {
       'label': 'Toggle Block Comment',
-      'command': 'block-comment-plus:toggle'
+      'command': 'block-and-line-comment:toggle'
     }
   ]
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'Block Comment Plus'
+      'label': 'Block and Lines Comment'
       'submenu': [
         {
           'label': 'Toggle block comment',
-          'command': 'block-comment-plus:toggle'
+          'command': 'block-and-line-comment:toggle'
         }
       ]
     ]

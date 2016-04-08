@@ -1,11 +1,11 @@
-# block-comment-plus
+# block-and-line-comment
 
 Comment your code with block comments.
 
 ## Installation
 
 ```
-apm install block-comment-plus
+apm install block-and-line-comment
 ```
 
 Or using the settings view in atom.
@@ -14,11 +14,11 @@ Or using the settings view in atom.
 
 Mac:
 
-`cmd` + `alt` + `/`
+`cmd` + `d`
 
 Windows / Linux:
 
-`ctrl` + `alt` + `/`
+`ctrl` + `d`
 
 ## Supported languages so far
 
@@ -32,6 +32,7 @@ Windows / Linux:
 
 ## Features
 - Based on grammars at start and end points of selection
+- If there is not selected text comments all row
 - Handles embedded languages (such as PHP in HTML)
 - Multiple selections
 - uncomment when cursor is positioned inside a comment block.

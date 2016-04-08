@@ -27,7 +27,7 @@ describe('[HTML/PHP]', () => {
 		runs(() => {
 			editor = atom.workspace.getActiveTextEditor();
       editorView = atom.views.getView(editor);
-      activationPromise = atom.packages.activatePackage("block-comment-plus");
+      activationPromise = atom.packages.activatePackage("block-and-line-comment");
 		});
 	});
 
@@ -35,7 +35,7 @@ describe('[HTML/PHP]', () => {
     editor.setCursorBufferPosition([7, 0]);
     editor.selectToBufferPosition([8, 31]);
 
-    atom.commands.dispatch(editorView, 'block-comment-plus:toggle');
+    atom.commands.dispatch(editorView, 'block-and-line-comment:toggle');
 
     waitsForPromise(() => {
 			return activationPromise;
@@ -56,7 +56,7 @@ describe('[HTML/PHP]', () => {
     editor.setCursorBufferPosition([8, 13]);
     editor.selectToBufferPosition([8, 24]);
 
-    atom.commands.dispatch(editorView, 'block-comment-plus:toggle');
+    atom.commands.dispatch(editorView, 'block-and-line-comment:toggle');
 
     waitsForPromise(() => {
 			return activationPromise;
@@ -77,7 +77,7 @@ describe('[HTML/PHP]', () => {
     editor.setCursorBufferPosition([18, 4]);
     editor.selectToBufferPosition([20, 11]);
 
-    atom.commands.dispatch(editorView, 'block-comment-plus:toggle');
+    atom.commands.dispatch(editorView, 'block-and-line-comment:toggle');
 
     waitsForPromise(() => {
 			return activationPromise;
@@ -97,7 +97,7 @@ describe('[HTML/PHP]', () => {
   it('should remove an HTML comment block without selection', () => {
     editor.setCursorBufferPosition([19, 4]);
 
-    atom.commands.dispatch(editorView, 'block-comment-plus:toggle');
+    atom.commands.dispatch(editorView, 'block-and-line-comment:toggle');
 
     waitsForPromise(() => {
 			return activationPromise;
@@ -118,7 +118,7 @@ describe('[HTML/PHP]', () => {
     editor.setCursorBufferPosition([8, 4]);
     editor.selectToBufferPosition([8, 24]);
 
-    atom.commands.dispatch(editorView, 'block-comment-plus:toggle');
+    atom.commands.dispatch(editorView, 'block-and-line-comment:toggle');
 
     waitsForPromise(() => {
 			return activationPromise;

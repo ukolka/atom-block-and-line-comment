@@ -1,15 +1,15 @@
 {
-  "name": "block-comment-plus",
-  "main": "./lib/block-comment-plus.js",
+  "name": "block-and-line-comment",
+  "main": "./lib/block-and-line-comment.js",
   "version": "0.2.0",
-  "description": "Comment your code with block comments",
+  "description": "Comment your code with block and lines comments",
   "keywords": [
-    "block comment"
+    "block lines comment"
   ],
   "activationCommands": {
-    "atom-text-editor:not([mini])": "block-comment-plus:toggle"
+    "atom-text-editor:not([mini])": "block-and-line-comment:toggle"
   },
-  "repository": "https://github.com/whoisthecoon/atom-block-comment-plus",
+  "repository": "https://github.com/DPDmancul/atom-block-and-line-comment",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

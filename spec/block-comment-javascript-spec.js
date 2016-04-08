@@ -24,14 +24,14 @@ describe('[Javascript]', () => {
 		runs(() => {
 			editor = atom.workspace.getActiveTextEditor();
       editorView = atom.views.getView(editor);
-      activationPromise = atom.packages.activatePackage("block-comment-plus");
+      activationPromise = atom.packages.activatePackage("block-and-line-comment");
 		});
 	});
 
 	it('should wadd a comment block from beginning of line 3 to end of line 5', () => {
 		editor.setCursorBufferPosition([2, 0]);
 		editor.selectToBufferPosition([4, 1]);
-		atom.commands.dispatch(editorView, 'block-comment-plus:toggle');
+		atom.commands.dispatch(editorView, 'block-and-line-comment:toggle');
 
 		waitsForPromise(() => {
 			return activationPromise;
@@ -51,7 +51,7 @@ describe('[Javascript]', () => {
 	it('should remove the comment block beginning at line 7 and ending at line 9', () => {
 		editor.setCursorBufferPosition([6, 0]);
 		editor.selectToBufferPosition([8, 1]);
-		atom.commands.dispatch(editorView, 'block-comment-plus:toggle');
+		atom.commands.dispatch(editorView, 'block-and-line-comment:toggle');
 
 		waitsForPromise(() => {
 			return activationPromise;
@@ -71,7 +71,7 @@ describe('[Javascript]', () => {
 
 	it('should remove the comment block beginning at line 7 and ending at line 9 without selecting text', () => {
 		editor.setCursorBufferPosition([6, 5]);
-		atom.commands.dispatch(editorView, 'block-comment-plus:toggle');
+		atom.commands.dispatch(editorView, 'block-and-line-comment:toggle');
 
 		waitsForPromise(() => {
 			return activationPromise;
@@ -90,7 +90,7 @@ describe('[Javascript]', () => {
 
 	it('should remove comment if executed on a line-commented line', () => {
 		editor.setCursorBufferPosition([10, 0]);
-		atom.commands.dispatch(editorView, 'block-comment-plus:toggle');
+		atom.commands.dispatch(editorView, 'block-and-line-comment:toggle');
 
 		waitsForPromise(() => {
 			return activationPromise;
