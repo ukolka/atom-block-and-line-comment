@@ -29,6 +29,7 @@ Windows / Linux:
 - Markdown
 - Ruby
 - Elm
+- TeX and LaTeX
 
 ## Features
 - Based on grammars at start and end points of selection
